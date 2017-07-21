@@ -29,25 +29,25 @@
 ```
 ### 下载方法
 ```Objective-C
-    [RSBreakPoint asynDownloadWithUrl:urlStr progressBlock:^(float progress, long long receiveByte, long long allByte) {
-        _progressView.progress = progress;
-        _progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(progress*100)];
-    } successBlock:^(NSString *filePath) {
-        NSLog(@"%@", filePath);
-    } failureBlock:^(NSString *filePath) {
-        NSLog(@"%@", filePath);
-    }];
-```Objective-C
+[RSBreakPoint asynDownloadWithUrl:urlStr progressBlock:^(float progress, long long receiveByte, long long allByte) {
+    _progressView.progress = progress;
+    _progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(progress*100)];
+} successBlock:^(NSString *filePath) {
+    NSLog(@"%@", filePath);
+} failureBlock:^(NSString *filePath) {
+    NSLog(@"%@", filePath);
+}];
+```
 ### 暂停方法
 ```Objective-C
-    [RSBreakPoint pause:urlStr];
+[RSBreakPoint pause:urlStr];
 ```
 ### 删除方法
 ```Objective-C
-    [RSBreakPoint pause:urlStr];
-    [RSFileManager deleteFile:[NSURL URLWithString:urlStr]];
-    _progressView.progress = 0.0;
-    _progressLabel.text = @"0%";
+[RSBreakPoint pause:urlStr];
+[RSFileManager deleteFile:[NSURL URLWithString:urlStr]];
+_progressView.progress = 0.0;
+_progressLabel.text = @"0%";
 ```
 
 使用简单、效率高效、进程安全~~~如果你有更好的建议,希望不吝赐教!
