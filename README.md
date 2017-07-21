@@ -43,6 +43,7 @@
 [RSBreakPoint pause:urlStr];
 ```
 ### 删除方法
+先调用一次暂停方法，先暂停，再删除。
 ```Objective-C
 [RSBreakPoint pause:urlStr];
 [RSFileManager deleteFile:[NSURL URLWithString:urlStr]];
