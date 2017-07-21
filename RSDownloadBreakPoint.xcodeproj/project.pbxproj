@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344384E41F20D37D00CEA00E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 344384E31F20D37D00CEA00E /* main.m */; };
+		344384E71F20D37D00CEA00E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 344384E61F20D37D00CEA00E /* AppDelegate.m */; };
+		344384EA1F20D37D00CEA00E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344384E91F20D37D00CEA00E /* ViewController.m */; };
+		344384ED1F20D37D00CEA00E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344384EB1F20D37D00CEA00E /* Main.storyboard */; };
+		344384EF1F20D37D00CEA00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344384EE1F20D37D00CEA00E /* Assets.xcassets */; };
+		344384F21F20D37D00CEA00E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344384F01F20D37D00CEA00E /* LaunchScreen.storyboard */; };
+		344384FD1F20D37D00CEA00E /* RSDownloadBreakPointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 344384FC1F20D37D00CEA00E /* RSDownloadBreakPointTests.m */; };
+		344385081F20D37D00CEA00E /* RSDownloadBreakPointUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 344385071F20D37D00CEA00E /* RSDownloadBreakPointUITests.m */; };
+		344385321F21C8C100CEA00E /* RSBreakPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 344385311F21C8C100CEA00E /* RSBreakPoint.m */; };
+		344385351F21C8F000CEA00E /* RSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 344385341F21C8F000CEA00E /* RSFileManager.m */; };
+		344385381F21C90C00CEA00E /* RSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 344385371F21C90C00CEA00E /* RSSession.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		344384F91F20D37D00CEA00E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344384D71F20D37D00CEA00E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344384DE1F20D37D00CEA00E;
+			remoteInfo = RSDownloadBreakPoint;
+		};
+		344385041F20D37D00CEA00E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344384D71F20D37D00CEA00E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344384DE1F20D37D00CEA00E;
+			remoteInfo = RSDownloadBreakPoint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		344384DF1F20D37D00CEA00E /* RSDownloadBreakPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSDownloadBreakPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		344384E31F20D37D00CEA00E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		344384E51F20D37D00CEA00E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		344384E61F20D37D00CEA00E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		344384E81F20D37D00CEA00E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		344384E91F20D37D00CEA00E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		344384EC1F20D37D00CEA00E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		344384EE1F20D37D00CEA00E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		344384F11F20D37D00CEA00E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		344384F31F20D37D00CEA00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344384F81F20D37D00CEA00E /* RSDownloadBreakPointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSDownloadBreakPointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		344384FC1F20D37D00CEA00E /* RSDownloadBreakPointTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSDownloadBreakPointTests.m; sourceTree = "<group>"; };
+		344384FE1F20D37D00CEA00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344385031F20D37D00CEA00E /* RSDownloadBreakPointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSDownloadBreakPointUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		344385071F20D37D00CEA00E /* RSDownloadBreakPointUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSDownloadBreakPointUITests.m; sourceTree = "<group>"; };
+		344385091F20D37D00CEA00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344385301F21C8C100CEA00E /* RSBreakPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBreakPoint.h; sourceTree = "<group>"; };
+		344385311F21C8C100CEA00E /* RSBreakPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBreakPoint.m; sourceTree = "<group>"; };
+		344385331F21C8F000CEA00E /* RSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSFileManager.h; sourceTree = "<group>"; };
+		344385341F21C8F000CEA00E /* RSFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSFileManager.m; sourceTree = "<group>"; };
+		344385361F21C90C00CEA00E /* RSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSession.h; sourceTree = "<group>"; };
+		344385371F21C90C00CEA00E /* RSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSession.m; sourceTree = "<group>"; };
+		344385391F21D0F600CEA00E /* RSDownloadBreakPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSDownloadBreakPoint.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344384DC1F20D37D00CEA00E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344384F51F20D37D00CEA00E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344385001F20D37D00CEA00E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344384D61F20D37D00CEA00E = {
+			isa = PBXGroup;
+			children = (
+				344384E11F20D37D00CEA00E /* RSDownloadBreakPoint */,
+				344384FB1F20D37D00CEA00E /* RSDownloadBreakPointTests */,
+				344385061F20D37D00CEA00E /* RSDownloadBreakPointUITests */,
+				344384E01F20D37D00CEA00E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		344384E01F20D37D00CEA00E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344384DF1F20D37D00CEA00E /* RSDownloadBreakPoint.app */,
+				344384F81F20D37D00CEA00E /* RSDownloadBreakPointTests.xctest */,
+				344385031F20D37D00CEA00E /* RSDownloadBreakPointUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344384E11F20D37D00CEA00E /* RSDownloadBreakPoint */ = {
+			isa = PBXGroup;
+			children = (
+				344384E51F20D37D00CEA00E /* AppDelegate.h */,
+				344384E61F20D37D00CEA00E /* AppDelegate.m */,
+				344384E81F20D37D00CEA00E /* ViewController.h */,
+				344384E91F20D37D00CEA00E /* ViewController.m */,
+				3443852F1F21C88A00CEA00E /* RSDownloadBreakPoint */,
+				344384EB1F20D37D00CEA00E /* Main.storyboard */,
+				344384EE1F20D37D00CEA00E /* Assets.xcassets */,
+				344384F01F20D37D00CEA00E /* LaunchScreen.storyboard */,
+				344384F31F20D37D00CEA00E /* Info.plist */,
+				344384E21F20D37D00CEA00E /* Supporting Files */,
+			);
+			path = RSDownloadBreakPoint;
+			sourceTree = "<group>";
+		};
+		344384E21F20D37D00CEA00E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				344384E31F20D37D00CEA00E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		344384FB1F20D37D00CEA00E /* RSDownloadBreakPointTests */ = {
+			isa = PBXGroup;
+			children = (
+				344384FC1F20D37D00CEA00E /* RSDownloadBreakPointTests.m */,
+				344384FE1F20D37D00CEA00E /* Info.plist */,
+			);
+			path = RSDownloadBreakPointTests;
+			sourceTree = "<group>";
+		};
+		344385061F20D37D00CEA00E /* RSDownloadBreakPointUITests */ = {
+			isa = PBXGroup;
+			children = (
+				344385071F20D37D00CEA00E /* RSDownloadBreakPointUITests.m */,
+				344385091F20D37D00CEA00E /* Info.plist */,
+			);
+			path = RSDownloadBreakPointUITests;
+			sourceTree = "<group>";
+		};
+		3443852F1F21C88A00CEA00E /* RSDownloadBreakPoint */ = {
+			isa = PBXGroup;
+			children = (
+				344385391F21D0F600CEA00E /* RSDownloadBreakPoint.h */,
+				344385301F21C8C100CEA00E /* RSBreakPoint.h */,
+				344385311F21C8C100CEA00E /* RSBreakPoint.m */,
+				344385331F21C8F000CEA00E /* RSFileManager.h */,
+				344385341F21C8F000CEA00E /* RSFileManager.m */,
+				344385361F21C90C00CEA00E /* RSSession.h */,
+				344385371F21C90C00CEA00E /* RSSession.m */,
+			);
+			path = RSDownloadBreakPoint;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		344384DE1F20D37D00CEA00E /* RSDownloadBreakPoint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3443850C1F20D37D00CEA00E /* Build configuration list for PBXNativeTarget "RSDownloadBreakPoint" */;
+			buildPhases = (
+				344384DB1F20D37D00CEA00E /* Sources */,
+				344384DC1F20D37D00CEA00E /* Frameworks */,
+				344384DD1F20D37D00CEA00E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSDownloadBreakPoint;
+			productName = RSDownloadBreakPoint;
+			productReference = 344384DF1F20D37D00CEA00E /* RSDownloadBreakPoint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		344384F71F20D37D00CEA00E /* RSDownloadBreakPointTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3443850F1F20D37D00CEA00E /* Build configuration list for PBXNativeTarget "RSDownloadBreakPointTests" */;
+			buildPhases = (
+				344384F41F20D37D00CEA00E /* Sources */,
+				344384F51F20D37D00CEA00E /* Frameworks */,
+				344384F61F20D37D00CEA00E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344384FA1F20D37D00CEA00E /* PBXTargetDependency */,
+			);
+			name = RSDownloadBreakPointTests;
+			productName = RSDownloadBreakPointTests;
+			productReference = 344384F81F20D37D00CEA00E /* RSDownloadBreakPointTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		344385021F20D37D00CEA00E /* RSDownloadBreakPointUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344385121F20D37D00CEA00E /* Build configuration list for PBXNativeTarget "RSDownloadBreakPointUITests" */;
+			buildPhases = (
+				344384FF1F20D37D00CEA00E /* Sources */,
+				344385001F20D37D00CEA00E /* Frameworks */,
+				344385011F20D37D00CEA00E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344385051F20D37D00CEA00E /* PBXTargetDependency */,
+			);
+			name = RSDownloadBreakPointUITests;
+			productName = RSDownloadBreakPointUITests;
+			productReference = 344385031F20D37D00CEA00E /* RSDownloadBreakPointUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344384D71F20D37D00CEA00E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = StevenXie;
+				TargetAttributes = {
+					344384DE1F20D37D00CEA00E = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 7QT42R489Z;
+						ProvisioningStyle = Automatic;
+					};
+					344384F71F20D37D00CEA00E = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 344384DE1F20D37D00CEA00E;
+					};
+					344385021F20D37D00CEA00E = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 344384DE1F20D37D00CEA00E;
+					};
+				};
+			};
+			buildConfigurationList = 344384DA1F20D37D00CEA00E /* Build configuration list for PBXProject "RSDownloadBreakPoint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 344384D61F20D37D00CEA00E;
+			productRefGroup = 344384E01F20D37D00CEA00E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344384DE1F20D37D00CEA00E /* RSDownloadBreakPoint */,
+				344384F71F20D37D00CEA00E /* RSDownloadBreakPointTests */,
+				344385021F20D37D00CEA00E /* RSDownloadBreakPointUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		344384DD1F20D37D00CEA00E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344384F21F20D37D00CEA00E /* LaunchScreen.storyboard in Resources */,
+				344384EF1F20D37D00CEA00E /* Assets.xcassets in Resources */,
+				344384ED1F20D37D00CEA00E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344384F61F20D37D00CEA00E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344385011F20D37D00CEA00E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		344384DB1F20D37D00CEA00E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344384EA1F20D37D00CEA00E /* ViewController.m in Sources */,
+				344385381F21C90C00CEA00E /* RSSession.m in Sources */,
+				344385321F21C8C100CEA00E /* RSBreakPoint.m in Sources */,
+				344385351F21C8F000CEA00E /* RSFileManager.m in Sources */,
+				344384E71F20D37D00CEA00E /* AppDelegate.m in Sources */,
+				344384E41F20D37D00CEA00E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344384F41F20D37D00CEA00E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344384FD1F20D37D00CEA00E /* RSDownloadBreakPointTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344384FF1F20D37D00CEA00E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344385081F20D37D00CEA00E /* RSDownloadBreakPointUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		344384FA1F20D37D00CEA00E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344384DE1F20D37D00CEA00E /* RSDownloadBreakPoint */;
+			targetProxy = 344384F91F20D37D00CEA00E /* PBXContainerItemProxy */;
+		};
+		344385051F20D37D00CEA00E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344384DE1F20D37D00CEA00E /* RSDownloadBreakPoint */;
+			targetProxy = 344385041F20D37D00CEA00E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		344384EB1F20D37D00CEA00E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344384EC1F20D37D00CEA00E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		344384F01F20D37D00CEA00E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344384F11F20D37D00CEA00E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3443850A1F20D37D00CEA00E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3443850B1F20D37D00CEA00E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3443850D1F20D37D00CEA00E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7QT42R489Z;
+				INFOPLIST_FILE = RSDownloadBreakPoint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSDownloadBreakPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3443850E1F20D37D00CEA00E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7QT42R489Z;
+				INFOPLIST_FILE = RSDownloadBreakPoint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSDownloadBreakPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		344385101F20D37D00CEA00E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RSDownloadBreakPointTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSDownloadBreakPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSDownloadBreakPoint.app/RSDownloadBreakPoint";
+			};
+			name = Debug;
+		};
+		344385111F20D37D00CEA00E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RSDownloadBreakPointTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSDownloadBreakPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSDownloadBreakPoint.app/RSDownloadBreakPoint";
+			};
+			name = Release;
+		};
+		344385131F20D37D00CEA00E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RSDownloadBreakPointUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSDownloadBreakPointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RSDownloadBreakPoint;
+			};
+			name = Debug;
+		};
+		344385141F20D37D00CEA00E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RSDownloadBreakPointUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = R.S.RSDownloadBreakPointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RSDownloadBreakPoint;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344384DA1F20D37D00CEA00E /* Build configuration list for PBXProject "RSDownloadBreakPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3443850A1F20D37D00CEA00E /* Debug */,
+				3443850B1F20D37D00CEA00E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3443850C1F20D37D00CEA00E /* Build configuration list for PBXNativeTarget "RSDownloadBreakPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3443850D1F20D37D00CEA00E /* Debug */,
+				3443850E1F20D37D00CEA00E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3443850F1F20D37D00CEA00E /* Build configuration list for PBXNativeTarget "RSDownloadBreakPointTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344385101F20D37D00CEA00E /* Debug */,
+				344385111F20D37D00CEA00E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344385121F20D37D00CEA00E /* Build configuration list for PBXNativeTarget "RSDownloadBreakPointUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344385131F20D37D00CEA00E /* Debug */,
+				344385141F20D37D00CEA00E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344384D71F20D37D00CEA00E /* Project object */;
+}
