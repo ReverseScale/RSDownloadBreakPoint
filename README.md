@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg) ![](https://img.shields.io/badge/download-2MB-brightgreen.svg
 ) ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
 
-现在不少APP都有加入下载功能，如下载离线数据包、离线书、地图等等，作为下载的必备技能，断点续传正悄然向你走来。
+现在不少APP都有加入下载功能，如下载离线数据包、离线书、地图等等，作为下载的必备技能，断点续传正悄然向你走来。Swift、Objective-C两种语言实现。
 
 | 名称 |1.列表页 |2.展示页 |3.下载页 |
 | ------------- | ------------- | ------------- | ------------- |
@@ -28,6 +28,7 @@
 #import "RSDownloadBreakPoint.h"
 ```
 ### 下载方法
+OC 实现
 ```Objective-C
 [RSBreakPoint asynDownloadWithUrl:urlStr progressBlock:^(float progress, long long receiveByte, long long allByte) {
     _progressView.progress = progress;
@@ -38,12 +39,40 @@
     NSLog(@"%@", filePath);
 }];
 ```
+Swift 实现
+```Swift
+DownloaderManager.shared.download(urlString: model!.urlString, toPath: model!.destinationPath, process: { (progress, sizeString, speedString) in
+    cell.progressView?.progress=progress;
+    cell.progressLabel?.text=String(format: "%.1f%%",progress*100)
+    cell.sizeLabel?.text=sizeString
+    cell.speedLabel?.text=speedString
+    if(speedString==nil){
+        cell.speedLabel?.isHidden=true
+    }
+    else{
+        cell.speedLabel?.isHidden=false
+    }
+}, completion: {
+    sender?.setTitle("完成", for: UIControlState.normal)
+    sender?.isEnabled=false
+    cell.speedLabel?.isHidden=true
+    let alert=UIAlertView.init(title:String(format: "%@下载完成",(model?.name)!), message: nil, delegate: nil, cancelButtonTitle: "确定")
+    alert.show()
+}, failure: { (error) in
+    DownloaderManager.shared.cancelDownloadTaskWithUrlString(urlString: (model?.urlString)!)
+    sender?.setTitle("恢复", for: UIControlState.normal)
+    cell.speedLabel?.isHidden=true
+    let alert=UIAlertView.init(title:"ERROR", message: nil, delegate: nil, cancelButtonTitle: "确定")
+    alert.show()
+})
+```
 ### 暂停方法
+OC：
 ```Objective-C
 [RSBreakPoint pause:urlStr];
 ```
 ### 删除方法
-先调用一次暂停方法，先暂停，再删除。
+OC：先调用一次暂停方法，先暂停，再删除。
 ```Objective-C
 [RSBreakPoint pause:urlStr];
 [RSFileManager deleteFile:[NSURL URLWithString:urlStr]];
